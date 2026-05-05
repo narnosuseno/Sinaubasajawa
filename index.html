@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="id" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Pembelajaran Bahasa Jawa - Kelas 8</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f7f9fc;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .android-card {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e0e4eb;
+        }
+        .android-card:active {
+            transform: scale(0.97);
+            background-color: #f0f3f8;
+        }
+        .status-bar-spacer {
+            height: env(safe-area-inset-top, 24px);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <div class="status-bar-spacer bg-indigo-600"></div>
+
+    <header class="bg-indigo-600 text-white pt-8 pb-16 px-6 rounded-b-[32px] shadow-lg">
+        <div class="max-w-md mx-auto">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-sm font-medium opacity-80">Sugeng Rawuh</span>
+                <i data-lucide="bell" class="w-5 h-5"></i>
+            </div>
+            <h1 class="text-3xl font-bold mb-2">Materi Bahasa Jawa</h1>
+            <div class="inline-flex items-center bg-indigo-500 bg-opacity-40 px-3 py-1 rounded-full text-xs font-semibold border border-indigo-400">
+                <i data-lucide="graduation-cap" class="w-3 h-3 mr-1"></i> KELAS 8 SEMESTER 1 & 2
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto px-6 -mt-8">
+        <div class="grid grid-cols-1 gap-4">
+            
+            <a href="Aksara_Jawa_8.html" class="android-card bg-white p-5 rounded-[24px] flex items-center shadow-sm">
+                <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 mr-4">
+                    <i data-lucide="pen-tool" class="w-7 h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="font-bold text-gray-800 text-lg">Aksara Jawa</h3>
+                    <p class="text-sm text-gray-500">Sinau nulis lan maca aksara legena & sandhangan.</p>
+                </div>
+                <i data-lucide="chevron-right" class="text-gray-300 w-5 h-5"></i>
+            </a>
+
+            <a href="Serat_Wulangreh.html" class="android-card bg-white p-5 rounded-[24px] flex items-center shadow-sm">
+                <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 mr-4">
+                    <i data-lucide="book-open" class="w-7 h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="font-bold text-gray-800 text-lg">Serat Wulangreh</h3>
+                    <p class="text-sm text-gray-500">Memahami piwulang luhur ing Pupuh Kinanthi.</p>
+                </div>
+                <i data-lucide="chevron-right" class="text-gray-300 w-5 h-5"></i>
+            </a>
+
+            <a href="Pariwara.html" class="android-card bg-white p-5 rounded-[24px] flex items-center shadow-sm">
+                <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mr-4">
+                    <i data-lucide="megaphone" class="w-7 h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="font-bold text-gray-800 text-lg">Pariwara (Iklan)</h3>
+                    <p class="text-sm text-gray-500">Analisis struktur lan gaya basa iklan Jawa.</p>
+                </div>
+                <i data-lucide="chevron-right" class="text-gray-300 w-5 h-5"></i>
+            </a>
+
+            <a href="Teks_Eksposisi.html" class="android-card bg-white p-5 rounded-[24px] flex items-center shadow-sm">
+                <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 mr-4">
+                    <i data-lucide="layout" class="w-7 h-7"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="font-bold text-gray-800 text-lg">Teks Eksposisi</h3>
+                    <p class="text-sm text-gray-500">Ngandharake ide babagan Budaya Jawa.</p>
+                </div>
+                <i data-lucide="chevron-right" class="text-gray-300 w-5 h-5"></i>
+            </a>
+
+        </div>
+
+        <div class="mt-8 p-6 bg-indigo-50 rounded-[24px] border border-indigo-100">
+            <div class="flex items-center mb-2 text-indigo-700">
+                <i data-lucide="info" class="w-5 h-5 mr-2"></i>
+                <span class="font-bold">Petunjuk Belajar</span>
+            </div>
+            <p class="text-sm text-indigo-900 leading-relaxed">
+                Pilih salah siji kertu ing dhuwur kanggo miwiti sinau. Saben materi wis dilengkapi karo ringkesan lan kuis latihan.
+            </p>
+        </div>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 glass-nav border-t border-gray-200 px-6 py-3 flex justify-around items-center z-50">
+        <div class="flex flex-col items-center text-indigo-600">
+            <i data-lucide="home" class="w-6 h-6"></i>
+            <span class="text-[10px] mt-1 font-medium">Beranda</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-400" onclick="alert('Fitur Statistik Belum Tersedia')">
+            <i data-lucide="bar-chart-2" class="w-6 h-6"></i>
+            <span class="text-[10px] mt-1 font-medium">Progres</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-400" onclick="alert('Fitur Profil Belum Tersedia')">
+            <i data-lucide="user" class="w-6 h-6"></i>
+            <span class="text-[10px] mt-1 font-medium">Profil</span>
+        </div>
+    </nav>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
