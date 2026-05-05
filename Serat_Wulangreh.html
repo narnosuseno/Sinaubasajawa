@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="jv" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serat Wulangreh - Pupuh Kinanthi</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=Source+Sans+3:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Source Sans 3', sans-serif; margin: 0; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .batik-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L35 15 L30 25 L25 15Z' fill='none' stroke='%23d4a574' stroke-width='0.5' opacity='0.3'/%3E%3Ccircle cx='30' cy='30' r='8' fill='none' stroke='%23d4a574' stroke-width='0.5' opacity='0.2'/%3E%3Cpath d='M10 40 Q20 35 30 40 Q40 45 50 40' fill='none' stroke='%23d4a574' stroke-width='0.5' opacity='0.2'/%3E%3C/svg%3E");
+    }
+    .tab-active { border-bottom: 3px solid #8b5e3c; color: #8b5e3c; font-weight: 700; }
+    .fade-in { animation: fadeIn 0.4s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .quiz-option { transition: all 0.2s; }
+    .quiz-option:hover { transform: translateX(4px); }
+    .quiz-correct { background: #d1fae5 !important; border-color: #10b981 !important; }
+    .quiz-wrong { background: #fee2e2 !important; border-color: #ef4444 !important; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app" class="h-full w-full overflow-auto bg-amber-50 batik-pattern"><!-- Header -->
+   <header class="bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-amber-50 py-6 px-4 shadow-lg">
+    <div class="max-w-4xl mx-auto text-center">
+     <p class="text-amber-300 text-sm tracking-widest uppercase mb-1">MTs Ma'arif Jumo</p>
+     <h1 id="main-title" class="font-display text-3xl md:text-4xl font-bold mb-1">Serat Wulangreh</h1>
+     <p class="text-amber-200 text-lg">Pupuh Kinanthi</p>
+     <p id="teacher" class="text-amber-300 text-sm mt-2"><i data-lucide="user" class="inline w-3 h-3 mr-1"></i>Narno Suseno, S.Pd</p>
+    </div>
+   </header><!-- Navigation Tabs -->
+   <nav class="bg-white/80 backdrop-blur sticky top-0 z-10 shadow-sm">
+    <div class="max-w-4xl mx-auto flex overflow-x-auto" id="tabs"><button onclick="showTab('materi')" class="tab-btn tab-active px-5 py-3 text-sm whitespace-nowrap" data-tab="materi">📖 Materi</button> <button onclick="showTab('tembang')" class="tab-btn px-5 py-3 text-sm whitespace-nowrap" data-tab="tembang">🎵 Tembang</button> <button onclick="showTab('tegese')" class="tab-btn px-5 py-3 text-sm whitespace-nowrap" data-tab="tegese">📝 Tegese</button> <button onclick="showTab('quiz')" class="tab-btn px-5 py-3 text-sm whitespace-nowrap" data-tab="quiz">✅ Gladhen</button>
+    </div>
+   </nav><!-- Content -->
+   <main class="max-w-4xl mx-auto p-4 pb-12"><!-- Tab: Materi -->
+    <section id="tab-materi" class="fade-in">
+     <div class="bg-white rounded-xl shadow p-6 mb-4">
+      <h2 class="font-display text-2xl text-amber-900 mb-4">Pangertosan Serat Wulangreh</h2>
+      <p class="text-gray-700 leading-relaxed mb-4"><strong>Serat Wulangreh</strong> inggih menika salah satunggaling karya sastra Jawi ingkang dipunanggit dening <strong>Sri Susuhunan Pakubuwana IV</strong> (1768–1820) saking Kraton Surakarta Hadiningrat.</p>
+      <div class="bg-amber-50 border-l-4 border-amber-600 p-4 rounded mb-4">
+       <p class="text-amber-900 font-semibold mb-1">💡 Wulangreh</p>
+       <p class="text-amber-800 text-sm">"Wulang" = piwulang (ajaran), "Reh" = tata cara/laku. Dados Wulangreh tegesipun piwulang bab tata cara gesang.</p>
+      </div>
+      <h3 class="font-display text-xl text-amber-900 mb-2 mt-6">Pupuh Kinanthi</h3>
+      <p class="text-gray-700 leading-relaxed mb-3">Pupuh Kinanthi kalebet salah satunggaling sekar macapat. Tembung "Kinanthi" saking tembung "kanthi" ingkang tegesipun dituntun utawi dipimpin.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+       <div class="bg-gradient-to-br from-amber-100 to-amber-50 p-4 rounded-lg border border-amber-200">
+        <p class="font-bold text-amber-900 mb-2">🎯 Guru Gatra</p>
+        <p class="text-amber-800">6 gatra (larik)</p>
+       </div>
+       <div class="bg-gradient-to-br from-amber-100 to-amber-50 p-4 rounded-lg border border-amber-200">
+        <p class="font-bold text-amber-900 mb-2">🔢 Guru Wilangan</p>
+        <p class="text-amber-800">8, 8, 8, 8, 8, 8</p>
+       </div>
+       <div class="bg-gradient-to-br from-amber-100 to-amber-50 p-4 rounded-lg border border-amber-200 md:col-span-2">
+        <p class="font-bold text-amber-900 mb-2">🔤 Guru Lagu</p>
+        <p class="text-amber-800">u, i, a, i, a, i</p>
+       </div>
+      </div>
+     </div>
+    </section><!-- Tab: Tembang -->
+    <section id="tab-tembang" class="fade-in hidden">
+     <div class="bg-white rounded-xl shadow p-6 mb-4">
+      <h2 class="font-display text-2xl text-amber-900 mb-4">Cakepan Pupuh Kinanthi</h2>
+      <p class="text-sm text-gray-500 mb-4">Pada 1 - Serat Wulangreh</p>
+      <div class="space-y-3" id="tembang-lines">
+       <div class="tembang-line bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500 cursor-pointer hover:bg-amber-100 transition" onclick="toggleMeaning(this)">
+        <p class="text-amber-900 font-semibold text-lg">Padha gulangen ing kalbu</p>
+        <p class="text-amber-700 text-sm mt-1 meaning hidden">→ Padha latihen ing ati (Latihlah dalam hati)</p>
+        <p class="text-gray-400 text-xs mt-1">Guru wilangan: 8 | Guru lagu: u</p>
+       </div>
+       <div class="tembang-line bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500 cursor-pointer hover:bg-amber-100 transition" onclick="toggleMeaning(this)">
+        <p class="text-amber-900 font-semibold text-lg">Ing sasmita amrih lantip</p>
+        <p class="text-amber-700 text-sm mt-1 meaning hidden">→ Ing isyarat supaya lantip (Dalam isyarat agar cerdas)</p>
+        <p class="text-gray-400 text-xs mt-1">Guru wilangan: 8 | Guru lagu: i</p>
+       </div>
+       <div class="tembang-line bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500 cursor-pointer hover:bg-amber-100 transition" onclick="toggleMeaning(this)">
+        <p class="text-amber-900 font-semibold text-lg">Aja pijer mangan nendra</p>
+        <p class="text-amber-700 text-sm mt-1 meaning hidden">→ Aja kerep mangan lan turu (Jangan sering makan dan tidur)</p>
+        <p class="text-gray-400 text-xs mt-1">Guru wilangan: 8 | Guru lagu: a</p>
+       </div>
+       <div class="tembang-line bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500 cursor-pointer hover:bg-amber-100 transition" onclick="toggleMeaning(this)">
+        <p class="text-amber-900 font-semibold text-lg">Kaprawiran den kaesthi</p>
+        <p class="text-amber-700 text-sm mt-1 meaning hidden">→ Keberanian diutamakan (Keberanian harus diutamakan)</p>
+        <p class="text-gray-400 text-xs mt-1">Guru wilangan: 8 | Guru lagu: i</p>
+       </div>
+       <div class="tembang-line bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500 cursor-pointer hover:bg-amber-100 transition" onclick="toggleMeaning(this)">
+        <p class="text-amber-900 font-semibold text-lg">Pesunen sariranira</p>
+        <p class="text-amber-700 text-sm mt-1 meaning hidden">→ Prihatinenana awakmu (Tirukatlah dirimu)</p>
+        <p class="text-gray-400 text-xs mt-1">Guru wilangan: 8 | Guru lagu: a</p>
+       </div>
+       <div class="tembang-line bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500 cursor-pointer hover:bg-amber-100 transition" onclick="toggleMeaning(this)">
+        <p class="text-amber-900 font-semibold text-lg">Sudanen dhahar lan guling</p>
+        <p class="text-amber-700 text-sm mt-1 meaning hidden">→ Kurangi makan lan turu (Kurangilah makan dan tidur)</p>
+        <p class="text-gray-400 text-xs mt-1">Guru wilangan: 8 | Guru lagu: i</p>
+       </div>
+      </div>
+      <p class="text-xs text-gray-400 mt-4 text-center">💡 Klik gatra kanggo ndeleng tegese</p>
+     </div>
+    </section><!-- Tab: Tegese -->
+    <section id="tab-tegese" class="fade-in hidden">
+     <div class="bg-white rounded-xl shadow p-6 mb-4">
+      <h2 class="font-display text-2xl text-amber-900 mb-4">Tembung Wigati &amp; Tegese</h2>
+      <div class="space-y-2">
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Padha</span><span class="text-gray-600">= pada, kabeh</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Gulangen</span><span class="text-gray-600">= latihen</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Kalbu</span><span class="text-gray-600">= ati, manah</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Sasmita</span><span class="text-gray-600">= isyarat, tandha</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Lantip</span><span class="text-gray-600">= pinter, cerdas</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Pijer</span><span class="text-gray-600">= kerep, tansah</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Nendra</span><span class="text-gray-600">= turu, sare</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Kaprawiran</span><span class="text-gray-600">= keberanian</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Kaesthi</span><span class="text-gray-600">= diutamakan</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Pesunen</span><span class="text-gray-600">= tirakat, prihatin</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Sudanen</span><span class="text-gray-600">= kurangi</span>
+       </div>
+       <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100"><span class="font-semibold text-amber-900">Guling</span><span class="text-gray-600">= turu, sare</span>
+       </div>
+      </div>
+      <div class="mt-6 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 p-4 rounded-lg">
+       <h3 class="font-bold text-green-900 mb-2">📌 Pesen Moral (Amanat)</h3>
+       <p class="text-green-800 text-sm leading-relaxed">Manungsa kedah tansah gladhen ing batin, supados lantip nampi sasmita. Kedah wani tirakat, nyuda dhahar lan sare, supados saged dados manungsa ingkang utami.</p>
+      </div>
+     </div>
+    </section><!-- Tab: Quiz -->
+    <section id="tab-quiz" class="fade-in hidden">
+     <div class="bg-white rounded-xl shadow p-6 mb-4">
+      <div class="flex justify-between items-center mb-4">
+       <h2 class="font-display text-2xl text-amber-900">Gladhen (Latihan)</h2><span id="score" class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-bold">Biji: 0/5</span>
+      </div>
+      <div id="quiz-container"></div><button onclick="resetQuiz()" class="mt-4 bg-amber-800 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition w-full font-semibold">🔄 Baleni Gladhen</button>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script>
+  const defaultConfig = {
+    app_title: "Serat Wulangreh",
+    teacher_name: "Narno Suseno, S.Pd",
+    background_color: "#fffbeb",
+    surface_color: "#ffffff",
+    text_color: "#78350f",
+    primary_action_color: "#92400e",
+    secondary_action_color: "#d97706",
+    font_family: "Playfair Display",
+    font_size: 16
+  };
+
+  function applyConfig(config) {
+    document.getElementById('main-title').textContent = config.app_title || defaultConfig.app_title;
+    document.getElementById('teacher').innerHTML = `<i data-lucide="user" class="inline w-3 h-3 mr-1"></i>${config.teacher_name || defaultConfig.teacher_name}`;
+    lucide.createIcons();
+
+    const font = config.font_family || defaultConfig.font_family;
+    document.querySelectorAll('.font-display').forEach(el => el.style.fontFamily = `${font}, serif`);
+
+    const size = config.font_size || defaultConfig.font_size;
+    document.querySelectorAll('h1').forEach(el => el.style.fontSize = `${size * 2}px`);
+    document.querySelectorAll('h2').forEach(el => el.style.fontSize = `${size * 1.5}px`);
+    document.querySelectorAll('p, span, button').forEach(el => {
+      if (!el.closest('header') && !el.classList.contains('font-display')) {
+        el.style.fontSize = `${size}px`;
+      }
+    });
+  }
+
+  window.elementSdk.init({
+    defaultConfig,
+    onConfigChange: async (config) => applyConfig(config),
+    mapToCapabilities: (config) => ({
+      recolorables: [
+        { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); }},
+        { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); }},
+        { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); }},
+        { get: () => config.primary_action_color || defaultConfig.primary_action_color, set: (v) => { config.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); }},
+        { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); }}
+      ],
+      borderables: [],
+      fontEditable: {
+        get: () => config.font_family || defaultConfig.font_family,
+        set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+      },
+      fontSizeable: {
+        get: () => config.font_size || defaultConfig.font_size,
+        set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+      }
+    }),
+    mapToEditPanelValues: (config) => new Map([
+      ["app_title", config.app_title || defaultConfig.app_title],
+      ["teacher_name", config.teacher_name || defaultConfig.teacher_name]
+    ])
+  });
+
+  // Tab navigation
+  function showTab(name) {
+    document.querySelectorAll('[id^="tab-"]').forEach(s => s.classList.add('hidden'));
+    document.getElementById('tab-' + name).classList.remove('hidden');
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('tab-active'));
+    document.querySelector(`[data-tab="${name}"]`).classList.add('tab-active');
+  }
+
+  // Toggle meaning
+  function toggleMeaning(el) {
+    el.querySelector('.meaning').classList.toggle('hidden');
+  }
+
+  // Quiz
+  const questions = [
+    { q: "Sinten ingkang nganggit Serat Wulangreh?", options: ["Sultan Agung", "Pakubuwana IV", "Mangkunegara I", "Hamengkubuwana IX"], answer: 1 },
+    { q: "Pinten guru gatra pupuh Kinanthi?", options: ["4 gatra", "5 gatra", "6 gatra", "7 gatra"], answer: 2 },
+    { q: "Menapa guru lagu pupuh Kinanthi?", options: ["u, i, a, i, a, i", "a, i, u, a, i, a", "i, a, i, a, i, u", "u, a, i, u, a, i"], answer: 0 },
+    { q: "'Nendra' tegesipun menapa?", options: ["mangan", "turu", "mlaku", "sinau"], answer: 1 },
+    { q: "Menapa pesen moral saking pada 1 Kinanthi?", options: ["Kudu sugih", "Kudu tirakat lan gladhen batin", "Kudu mangan akeh", "Kudu turu suwe"], answer: 1 }
+  ];
+
+  let score = 0;
+  let answered = new Set();
+
+  function renderQuiz() {
+    const container = document.getElementById('quiz-container');
+    container.innerHTML = questions.map((q, i) => `
+      <div class="mb-5 p-4 bg-gray-50 rounded-lg" id="q${i}">
+        <p class="font-semibold text-gray-800 mb-3">${i + 1}. ${q.q}</p>
+        <div class="space-y-2">
+          ${q.options.map((opt, j) => `
+            <button onclick="checkAnswer(${i},${j})" class="quiz-option w-full text-left p-3 rounded-lg border border-gray-200 bg-white hover:border-amber-400 text-sm" id="q${i}o${j}">
+              ${String.fromCharCode(65 + j)}. ${opt}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function checkAnswer(qi, oi) {
+    if (answered.has(qi)) return;
+    answered.add(qi);
+    const correct = questions[qi].answer;
+    document.getElementById(`q${qi}o${oi}`).classList.add(oi === correct ? 'quiz-correct' : 'quiz-wrong');
+    if (oi !== correct) document.getElementById(`q${qi}o${correct}`).classList.add('quiz-correct');
+    if (oi === correct) score++;
+    document.getElementById('score').textContent = `Biji: ${score}/${questions.length}`;
+  }
+
+  function resetQuiz() {
+    score = 0; answered.clear();
+    document.getElementById('score').textContent = `Biji: 0/${questions.length}`;
+    renderQuiz();
+  }
+
+  renderQuiz();
+  lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f647f55e1f4385d',t:'MTc3Nzg2NjE2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
